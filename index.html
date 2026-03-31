@@ -104,7 +104,7 @@
         .strip {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            min-height: 600px; /* Increased for better image framing */
+            min-height: 600px;
             background: var(--matte-gray);
             border-bottom: 1px solid #1a262e;
             overflow: hidden;
@@ -137,9 +137,9 @@
             height: 100%;
         }
 
-        /* FIX: Prioritizes the top of the image to keep the face visible */
+        /* FIX: Switched to 'contain' and locked 'top' to ensure face is fully visible */
         #elite-massage-img {
-            background-size: cover !important; 
+            background-size: contain !important; 
             background-position: top center !important; 
             background-color: var(--matte-gray);
         }
